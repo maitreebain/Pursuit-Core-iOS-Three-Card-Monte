@@ -27,42 +27,56 @@
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0QX-a4-hUI">
                                 <rect key="frame" x="273" y="341" width="121" height="195"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" backgroundImage="threeCard"/>
+                                <state key="normal" backgroundImage="cardBackRed"/>
                                 <connections>
-                                    <action selector="cardBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Shk-Gd-Obm"/>
-                                    <action selector="cardBackRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AuV-Yb-IPo"/>
+                                    <action selector="cardBackRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Two-pL-Jy2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3P3-eT-70F">
                                 <rect key="frame" x="15" y="341" width="121" height="195"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" backgroundImage="threeCard"/>
+                                <state key="normal" backgroundImage="cardBackRed"/>
                                 <connections>
-                                    <action selector="cardBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1fT-T1-Iop"/>
-                                    <action selector="cardBackRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d8t-0l-aVw"/>
+                                    <action selector="cardBackRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4DD-Ua-OoC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAh-8R-jQo">
                                 <rect key="frame" x="144" y="341" width="121" height="195"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" backgroundImage="kingCard"/>
+                                <state key="normal" backgroundImage="cardBackRed"/>
                                 <connections>
-                                    <action selector="cardBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gJW-GN-EKz"/>
-                                    <action selector="cardBackRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4gu-Qd-cTt"/>
+                                    <action selector="cardBackRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sD9-8V-Rpp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYW-DL-aaJ">
+                                <rect key="frame" x="151" y="628" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OKp-So-a0c"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zHu-kd-sVc"/>
                     </view>
+                    <connections>
+                        <outlet property="card1" destination="3P3-eT-70F" id="6bm-JQ-IeX"/>
+                        <outlet property="card2" destination="EAh-8R-jQo" id="bzf-xO-htw"/>
+                        <outlet property="card3" destination="0QX-a4-hUI" id="GPY-MF-W0I"/>
+                        <outlet property="display" destination="Xg9-my-xDO" id="Cgv-Bd-4R9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="117"/>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
         </scene>
     </scenes>
     <resources>
-        <image name="kingCard" width="322" height="450"/>
-        <image name="threeCard" width="150" height="215"/>
+        <image name="cardBackRed" width="686" height="976"/>
     </resources>
 </document>
